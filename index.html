@@ -1,76 +1,75 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenue sur le site officiel de Désinfection Urbaine, votre expert en hygiène urbaine.">
-    <meta name="author" content="Désinfection Urbaine">
-    <title>Désinfection Urbaine</title>
+    <title>Disinfection Urbaine</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.jpg" alt="Logo Désinfection Urbaine" width="150">
+            <img src="JPG - NERO.jpg" alt="Logo Disinfection Urbaine">
         </div>
-        <h1>Bienvenue chez Désinfection Urbaine</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Chi Siamo</a></li>
+                <li><a href="#services">Servizi</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">À Propos</a></li>
-            <li><a href="#documents">Nos Documents</a></li>
-            <li><a href="#insect-info">Schede Informative</a></li>
-            <li><a href="#contact">Contactez-Nous</a></li>
-        </ul>
-    </nav>
+    <section id="home" class="hero">
+        <h1>Benvenuti su Disinfection Urbaine</h1>
+        <p>La tua soluzione professionale per la disinfestazione urbana.</p>
+        <a href="#contact" class="cta-button">Richiedi un Preventivo</a>
+    </section>
 
-    <main>
-        <!-- Sezione "A Propos" -->
-        <section id="about">
-            <h2>À Propos de Désinfection Urbaine</h2>
-            <p>Désinfection Urbaine est une entreprise dédiée à la sécurité sanitaire et à l'entretien des espaces publics.</p>
-        </section>
+    <section id="about">
+        <h2>Chi Siamo</h2>
+        <p>Disinfection Urbaine è un'azienda specializzata nella disinfestazione e nella gestione degli infestanti urbani. Con anni di esperienza, offriamo soluzioni sicure ed efficaci per garantire ambienti sani e protetti.</p>
+    </section>
 
-        <!-- Sezione "Nos Documents" -->
-        <section id="documents">
-            <h2>Nos Documents</h2>
-            <ul>
-                <li><a href="documents/choix-histoire-logo.pdf" target="_blank">Choix et Histoire du Logo</a></li>
-                <li><a href="documents/choix-histoire-nom.pdf" target="_blank">Choix et Histoire du Nom de la Société</a></li>
-                <li><a href="documents/mission-vision.pdf" target="_blank">Mission et Vision</a></li>
-                <li><a href="documents/politique-environnementale.pdf" target="_blank">Politique Environnementale</a></li>
-                <li><a href="documents/qualite.pdf" target="_blank">Qualité</a></li>
-                <li><a href="documents/ethique.pdf" target="_blank">Éthique</a></li>
-                <li><a href="documents/securite.pdf" target="_blank">Sécurité</a></li>
-            </ul>
-        </section>
+    <section id="services">
+        <h2>I Nostri Servizi</h2>
+        <div class="service">
+            <h3>Disinfestazione Blatte</h3>
+            <p>Soluzioni rapide per l'eliminazione degli infestanti striscianti.</p>
+        </div>
+        <div class="service">
+            <h3>Controllo Roditori</h3>
+            <p>Interventi professionali per allontanare i roditori in modo sicuro.</p>
+        </div>
+        <div class="service">
+            <h3>Trattamenti Anti-Zanzare</h3>
+            <p>Proteggi i tuoi ambienti dalle zanzare e da altri insetti volanti.</p>
+        </div>
+        <div class="service">
+            <h3>Bonifiche Ambientali</h3>
+            <p>Interventi mirati per la sanificazione di spazi urbani e industriali.</p>
+        </div>
+    </section>
 
-        <!-- Sezione "Schede Informative" sugli insetti -->
-        <section id="insect-info">
-            <h2>Schede Informative sur les Insectes</h2>
-            <p>Voici les premières informations sur certains insectes. D'autres seront ajoutées progressivement.</p>
-            <ul>
-                <li><a href="documents/insecte-1.pdf" target="_blank">Insecte 1</a></li>
-                <li><a href="documents/insecte-2.pdf" target="_blank">Insecte 2</a></li>
-                <li><a href="documents/insecte-3.pdf" target="_blank">Insecte 3</a></li>
-                <li><a href="documents/insecte-4.pdf" target="_blank">Insecte 4</a></li>
-                <li><a href="documents/insecte-5.pdf" target="_blank">Insecte 5</a></li>
-                <li><a href="documents/insecte-6.pdf" target="_blank">Insecte 6</a></li>
-            </ul>
-            <p>De nouvelles fiches seront ajoutées au fur et à mesure de leur création.</p>
-        </section>
-
-        <!-- Sezione "Contatti" -->
-        <section id="contact">
-            <h2>Contactez-Nous</h2>
-            <p><strong>Email :</strong> <a href="mailto:desinfectionurbaine@gmail.com">desinfectionurbaine@gmail.com</a></p>
-            <p><strong>Téléphone :</strong> +39 377 319 7066</p>
-        </section>
-    </main>
+    <section id="contact">
+        <h2>Contattaci</h2>
+        <form action="#" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Invia</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Désinfection Urbaine. Tous droits réservés.</p>
+        <p>&copy; 2024 Disinfection Urbaine. Tutti i diritti riservati.</p>
     </footer>
 </body>
 </html>
