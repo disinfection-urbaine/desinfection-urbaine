@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desinfection Urbaine</title>
+    <title>Disinfection Urbaine</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="JPG - NERO.jpg" alt="Logo Desinfection Urbaine">
+            <img src="JPG - NERO.jpg" alt="Logo Disinfection Urbaine">
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Chi Siamo</a></li>
-                <li><a href="#services">Servizi</a></li>
-                <li><a href="#resources">Risorse</a></li>
-                <li><a href="#contact">Contatti</a></li>
+                <li><a href="#home" id="home-link">Home</a></li>
+                <li><a href="#about" id="about-link">Chi Siamo</a></li>
+                <li><a href="#services" id="services-link">Servizi</a></li>
+                <li><a href="#contact" id="contact-link">Contatti</a></li>
+                <li>
+                    <select id="language-selector">
+                        <option value="it">Italiano</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <h1>Benvenuti su Desinfection Urbaine</h1>
-        <p>La tua soluzione professionale per la disinfestazione urbana.</p>
-        <a href="#contact" class="cta-button">Richiedi un Preventivo</a>
+        <h1 id="home-title">Benvenuti su Disinfection Urbaine</h1>
+        <p id="home-description">La tua soluzione professionale per la disinfestazione urbana.</p>
+        <a href="#contact" class="cta-button" id="cta-button">Richiedi un Preventivo</a>
     </section>
 
     <section id="about">
-        <h2>Chi Siamo</h2>
-        <p>Desinfection Urbaine è un'azienda specializzata nella disinfestazione e nella gestione degli infestanti urbani. Con anni di esperienza, offriamo soluzioni sicure ed efficaci per garantire ambienti sani e protetti.</p>
+        <h2 id="about-title">Chi Siamo</h2>
+        <p id="about-description">Disinfection Urbaine è un'azienda specializzata nella disinfestazione e nella gestione degli infestanti urbani.</p>
     </section>
 
     <section id="services">
-        <h2>I Nostri Servizi</h2>
+        <h2 id="services-title">I Nostri Servizi</h2>
         <div class="service">
             <h3>Disinfestazione Blatte</h3>
             <p>Soluzioni rapide per l'eliminazione degli infestanti striscianti.</p>
@@ -53,71 +59,92 @@
         </div>
     </section>
 
-    <section id="resources">
-        <h2>Risorse</h2>
-        <p>Esplora i documenti ufficiali della nostra azienda:</p>
-        <ul>
-            <li><a href="logo_story.pdf" download>Storia e Scelta del Logo</a></li>
-            <li><a href="company_name_story.pdf" download>Storia e Scelta del Nome</a></li>
-            <li><a href="vision.pdf" download>Vision</a></li>
-            <li><a href="mission.pdf" download>Mission</a></li>
-            <li><a href="environmental_policy.pdf" download>Politica Ambientale</a></li>
-            <li><a href="quality_policy.pdf" download>Politica della Qualità</a></li>
-            <li><a href="ethics_policy.pdf" download>Politica sull’Etica</a></li>
-            <li><a href="safety_policy.pdf" download>Politica sulla Sicurezza</a></li>
-        </ul>
-        <p>Schede informative sugli insetti:</p>
-        <ul>
-            <li><a href="insect_info_1.pdf" download>Scheda 1</a></li>
-            <li><a href="insect_info_2.pdf" download>Scheda 2</a></li>
-            <!-- Aggiungi altre schede man mano che vengono create -->
-        </ul>
-    </section>
-
     <section id="contact">
-        <h2>Contattaci</h2>
-        <p>Telefono: +39 3773197066</p>
-        <p>Email: <a href="mailto:desinfectionurbaine@gmail.com">desinfectionurbaine@gmail.com</a></p>
-        <p>Seguici sui social:</p>
-        <ul>
-            <li><a href="https://www.instagram.com/desinfection.urbaine2024/profilecard/?igsh=YjdpZm51Z29laWNv" target="_blank">Instagram</a></li>
-            <li><a href="https://www.facebook.com/share/7VW7T6HtbanNbX2X/" target="_blank">Facebook</a></li>
-            <li><a href="https://x.com/DesinfectionU?t=10DgZx6iymtzxH92_OOZdA&s=08" target="_blank">X</a></li>
-            <li><a href="https://www.tiktok.com/@desinfection.urba?_t=8rrJKRLESe0&_r=1" target="_blank">TikTok</a></li>
-        </ul>
+        <h2 id="contact-title">Contattaci</h2>
         <form action="#" method="POST">
-            <label for="name">Nome:</label>
+            <label for="name" id="name-label">Nome:</label>
             <input type="text" id="name" name="name" required>
             
-            <label for="email">Email:</label>
+            <label for="email" id="email-label">Email:</label>
             <input type="email" id="email" name="email" required>
             
-            <label for="message">Messaggio:</label>
+            <label for="message" id="message-label">Messaggio:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
             
-            <button type="submit">Invia</button>
+            <button type="submit" id="submit-button">Invia</button>
         </form>
     </section>
 
-    <section id="documents">
-    <h2>I Nostri Documenti</h2>
-    <ul>
-        <li><a href="pdf/logo_story.pdf" target="_blank">Visualizza Storia e Scelta del Logo</a></li>
-        <li><a href="pdf/company_name_story.pdf" target="_blank">Visualizza Storia e Scelta del Nome della Società</a></li>
-        <li><a href="pdf/quality_policy.pdf" target="_blank">Visualizza Politica della Qualità</a></li>
-        <li><a href="pdf/environment_policy.pdf" target="_blank">Visualizza Politica Ambientale</a></li>
-        <!-- Aggiungi altri link per i PDF -->
-    </ul>
-</section>
-
     <footer>
-        <p>&copy; 2024 Desinfection Urbaine. Tutti i diritti riservati.</p>
-        <p><a href="#" id="lang-switch">Cambia Lingua</a></p>
+        <p id="footer-text">&copy; 2024 Disinfection Urbaine. Tutti i diritti riservati.</p>
     </footer>
-    <section id="pdf-viewer">
-    <h2>Visualizza il PDF della Politica della Qualità</h2>
-    <div id="pdf-container"></div>
-</section>
 
+    <script>
+        // Definire le traduzioni per le lingue
+        const translations = {
+            it: {
+                "home-title": "Benvenuti su Disinfection Urbaine",
+                "home-description": "La tua soluzione professionale per la disinfestazione urbana.",
+                "cta-button": "Richiedi un Preventivo",
+                "about-title": "Chi Siamo",
+                "about-description": "Disinfection Urbaine è un'azienda specializzata nella disinfestazione e nella gestione degli infestanti urbani.",
+                "services-title": "I Nostri Servizi",
+                "contact-title": "Contattaci",
+                "name-label": "Nome:",
+                "email-label": "Email:",
+                "message-label": "Messaggio:",
+                "submit-button": "Invia",
+                "footer-text": "&copy; 2024 Disinfection Urbaine. Tutti i diritti riservati."
+            },
+            en: {
+                "home-title": "Welcome to Disinfection Urbaine",
+                "home-description": "Your professional solution for urban pest control.",
+                "cta-button": "Request a Quote",
+                "about-title": "About Us",
+                "about-description": "Disinfection Urbaine is a company specializing in pest control and the management of urban pests.",
+                "services-title": "Our Services",
+                "contact-title": "Contact Us",
+                "name-label": "Name:",
+                "email-label": "Email:",
+                "message-label": "Message:",
+                "submit-button": "Submit",
+                "footer-text": "&copy; 2024 Disinfection Urbaine. All rights reserved."
+            },
+            fr: {
+                "home-title": "Bienvenue sur Disinfection Urbaine",
+                "home-description": "Votre solution professionnelle pour la désinfestation urbaine.",
+                "cta-button": "Demander un Devis",
+                "about-title": "À propos de nous",
+                "about-description": "Disinfection Urbaine est une entreprise spécialisée dans la désinfestation et la gestion des nuisibles urbains.",
+                "services-title": "Nos Services",
+                "contact-title": "Contactez-nous",
+                "name-label": "Nom:",
+                "email-label": "Email:",
+                "message-label": "Message:",
+                "submit-button": "Envoyer",
+                "footer-text": "&copy; 2024 Disinfection Urbaine. Tous droits réservés."
+            }
+        };
+
+        // Funzione per cambiare la lingua
+        function changeLanguage(language) {
+            const elements = document.querySelectorAll('[id]');
+            
+            elements.forEach(element => {
+                const elementId = element.id;
+                if (translations[language][elementId]) {
+                    element.innerHTML = translations[language][elementId];
+                }
+            });
+        }
+
+        // Gestire il cambio lingua
+        document.getElementById('language-selector').addEventListener('change', (event) => {
+            changeLanguage(event.target.value);
+        });
+
+        // Impostare la lingua predefinita
+        changeLanguage('it'); // Imposta Italiano come lingua predefinita
+    </script>
 </body>
 </html>
