@@ -114,5 +114,34 @@
         <p>&copy; 2024 Desinfection Urbaine. Tutti i diritti riservati.</p>
         <p><a href="#" id="lang-switch">Cambia Lingua</a></p>
     </footer>
+    <section id="pdf-viewer">
+    <h2>Visualizza il PDF della Politica della Qualità</h2>
+    <div id="pdf-container"></div>
+</section>
+
+<script>
+    var url = 'pdf/quality_policy.pdf'; // Percorso del PDF
+
+    // Carica il PDF con PDF.js
+    pdfjsLib.getDocument(url).promise.then(function(pdf) {
+        console.log('PDF caricato');
+        pdf.getPage(1).then(function(page) {
+            var scale = 1.5;
+            var viewport = page.getViewport({ scale: scale });
+            var canvas = document.createElement("canvas");
+            var context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+            document.getElementById('pdf-container').appendChild(canvas);
+
+            var renderContext = {
+                canvasContext: context,
+                viewport: viewport
+            };
+            page.render(renderContext);
+        });
+    });
+</script>
+
 </body>
 </html>
