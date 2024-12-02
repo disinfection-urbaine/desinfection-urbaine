@@ -17,30 +17,36 @@
                 <li><a href="#about">Chi Siamo</a></li>
                 <li><a href="#services">Servizi</a></li>
                 <li><a href="#gallery">Galleria</a></li>
-                <li><a href="#policies">Politiche</a></li>
                 <li><a href="#contact">Contatti</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sezione principale -->
     <section id="home" class="hero">
-        <h1>Benvenuti su Desinfection Urbaine</h1>
+        <h1 id="welcome">Benvenuti su Desinfection Urbaine</h1>
         <p>La tua soluzione professionale per la disinfestazione urbana.</p>
         <a href="#contact" class="cta-button">Richiedi un Preventivo</a>
     </section>
 
-    <!-- Chi siamo -->
     <section id="about">
         <h2>Chi Siamo</h2>
-        <p>Desinfection Urbaine è un'azienda specializzata nella disinfestazione urbana, nata per offrire soluzioni professionali, sicure e sostenibili. Il nostro logo riflette la determinazione e la precisione che ci guidano.</p>
-        <a href="spiegazione_logo.pdf" download>Scarica la storia del logo</a>
-        <a href="spiegazione_nome.pdf" download>Scarica la storia del nome</a>
+        <p>Desinfection Urbaine è un'azienda specializzata nella disinfestazione e nella gestione degli infestanti urbani. Con anni di esperienza, offriamo soluzioni sicure ed efficaci per garantire ambienti sani e protetti.</p>
+        <h3>Vision</h3>
+        <p>Creare un mondo libero da infestanti per un ambiente più sicuro e vivibile.</p>
+        <h3>Mission</h3>
+        <p>Fornire soluzioni innovative e sostenibili per la gestione degli infestanti.</p>
+        <h3>Politica Ambientale</h3>
+        <p>Il nostro impegno è utilizzare metodi ecologici e rispettosi dell'ambiente.</p>
+        <h3>Politica della Qualità</h3>
+        <p>Puntiamo a garantire il massimo standard di qualità nei nostri servizi.</p>
+        <h3>Politica sull'Etica</h3>
+        <p>Operiamo con trasparenza, responsabilità e rispetto verso i nostri clienti.</p>
+        <h3>Politica sulla Sicurezza</h3>
+        <p>Tuteliamo la sicurezza dei nostri clienti e dipendenti con protocolli rigorosi.</p>
     </section>
 
-    <!-- Servizi -->
     <section id="services">
-        <h2>I Nostri Servizi</h2>
+        <h2 id="services-title">I Nostri Servizi</h2>
         <div class="service">
             <h3>Disinfestazione Blatte</h3>
             <p>Soluzioni rapide per l'eliminazione degli infestanti striscianti.</p>
@@ -57,124 +63,81 @@
             <h3>Bonifiche Ambientali</h3>
             <p>Interventi mirati per la sanificazione di spazi urbani e industriali.</p>
         </div>
-        <div id="language-selector">
-    <button onclick="setLanguage('it')">🇮🇹 Italiano</button>
-    <button onclick="setLanguage('en')">🇬🇧 English</button>
-    <button onclick="setLanguage('fr')">🇫🇷 Français</button>
-</div>
-<script>
-    function setLanguage(lang) {
-        document.getElementById("welcome").innerText = translations[lang].welcome;
-        document.getElementById("contact").innerText = translations[lang].contact;
-        document.getElementById("services").innerText = translations[lang].services;
-    }
-</script>const translations = {
-    it: {
-        welcome: "Benvenuti su Desinfection Urbaine",
-        contact: "Contattaci",
-        services: "I nostri servizi",
-    },
-    en: {
-        welcome: "Welcome to Desinfection Urbaine",
-        contact: "Contact Us",
-        services: "Our Services",
-    },
-    fr: {
-        welcome: "Bienvenue à Desinfection Urbaine",
-        contact: "Contactez-nous",
-        services: "Nos Services",
-    },
-};
     </section>
 
-    <!-- Galleria -->
     <section id="gallery">
         <h2>Galleria</h2>
-        <div class="gallery">
-            <img src="calabrone.jpeg" alt="Calabrone">
-            <img src="calabrone1.jpeg" alt="Calabrone">
-            <img src="cimice.jpeg" alt="Cimice">
-            <img src="coccinella.jpeg" alt="Coccinella">
-            <img src="farfalla.jpeg" alt="Farfalla">
-            <img src="rettile.jpeg" alt="Rettile">
-            <img src="serpe.jpeg" alt="Serpe">
-            <img src="topo.jpeg" alt="Topo">
-            <img src="logo.jpeg" alt="Logo">
-            <img src="logo_locandina.jpeg" alt="Logo">
-            <img src="logo_numero.jpeg" alt="Logo">
-            <img src="logo_numero1.jpeg" alt="Logo">
+        <div class="gallery-grid">
+            <img src="calabrone.jpg" alt="Calabrone">
+            <img src="calabrone1.jpg" alt="Calabrone 1">
+            <img src="cimice.jpg" alt="Cimice">
+            <img src="coccinella.jpg" alt="Coccinella">
+            <img src="farfalla.jpg" alt="Farfalla">
+            <img src="rettile.jpg" alt="Rettile">
+            <img src="serpe.jpg" alt="Serpe">
+            <img src="topo.jpg" alt="Topo">
+            <img src="zanzara.jpg" alt="Zanzara">
         </div>
     </section>
 
-    <!-- Politiche aziendali -->
-    <section id="policies">
-        <h2>Politiche Aziendali</h2>
-        <ul>
-            <li><a href="vision.pdf" download>Vision</a></li>
-            <li><a href="mission.pdf" download>Mission</a></li>
-            <li><a href="politica_ambientale.pdf" download>Politica Ambientale</a></li>
-            <li><a href="politica_qualita.pdf" download>Politica della Qualità</a></li>
-            <li><a href="politica_etica.pdf" download>Politica sull'Etica</a></li>
-            <li><a href="politica_sicurezza.pdf" download>Politica sulla Sicurezza</a></li>
-        </ul>
-    </section>
-
-    <!-- Contatti -->
     <section id="contact">
-        <h2>Contattaci</h2>
-        <p>Telefono: +39 3773197066</p>
+        <h2 id="contact-title">Contattaci</h2>
+        <p>Telefono: <a href="tel:+393773197066">+39 3773197066</a> (anche su WhatsApp)</p>
         <p>Email: <a href="mailto:desinfectionurbaine@gmail.com">desinfectionurbaine@gmail.com</a></p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/desinfection.urbaine2024/profilecard/?igsh=YjdpZm51Z29laWNv">Instagram</a>
-            <a href="https://www.facebook.com/share/7VW7T6HtbanNbX2X/">Facebook</a>
-            <a href="https://x.com/DesinfectionU?t=10DgZx6iymtzxH92_OOZdA&s=08">X</a>
-            <a href="https://www.tiktok.com/@desinfection.urba?_t=8rrJKRLESe0&_r=1">TikTok</a>
-        </div>
-        <form action="https://formsubmit.co/desinfectionurbaine@gmail.com" method="POST">
-    <!-- Nome -->
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name" required>
-
-    <!-- Email -->
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <!-- Messaggio -->
-    <label for="message">Messaggio:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
-
-    <!-- Pulsante di invio -->
-    <button type="submit">Invia</button>
-</form>
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grazie!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-    </style>
-</head>
-<body>
-    <h1>Grazie per averci contattato!</h1>
-    <p>Abbiamo ricevuto il tuo messaggio e ti risponderemo al più presto.</p>
-    <a href="index.html">Torna alla Home</a>
-</body>
-</html>
-
+        <p>Seguici sui nostri social:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/desinfection.urbaine2024/profilecard/?igsh=YjdpZm51Z29laWNv" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/7VW7T6HtbanNbX2X/" target="_blank">Facebook</a></li>
+            <li><a href="https://x.com/DesinfectionU?t=10DgZx6iymtzxH92_OOZdA&s=08" target="_blank">X</a></li>
+            <li><a href="https://www.tiktok.com/@desinfection.urba?_t=8rrJKRLESe0&_r=1" target="_blank">TikTok</a></li>
+        </ul>
+        <form action="#" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Invia</button>
+        </form>
     </section>
 
     <footer>
         <p>&copy; 2024 Desinfection Urbaine. Tutti i diritti riservati.</p>
+        <div id="language-selector">
+            <button onclick="setLanguage('it')">🇮🇹 Italiano</button>
+            <button onclick="setLanguage('en')">🇬🇧 English</button>
+            <button onclick="setLanguage('fr')">🇫🇷 Français</button>
+        </div>
     </footer>
+
+    <script>
+        const translations = {
+            it: {
+                welcome: "Benvenuti su Desinfection Urbaine",
+                contact: "Contattaci",
+                services: "I nostri servizi",
+            },
+            en: {
+                welcome: "Welcome to Desinfection Urbaine",
+                contact: "Contact Us",
+                services: "Our Services",
+            },
+            fr: {
+                welcome: "Bienvenue à Desinfection Urbaine",
+                contact: "Contactez-nous",
+                services: "Nos Services",
+            },
+        };
+
+        function setLanguage(lang) {
+            document.getElementById("welcome").innerText = translations[lang].welcome;
+            document.getElementById("contact-title").innerText = translations[lang].contact;
+            document.getElementById("services-title").innerText = translations[lang].services;
+        }
+    </script>
 </body>
 </html>
