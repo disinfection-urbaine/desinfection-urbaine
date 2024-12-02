@@ -57,6 +57,19 @@
             <h3>Bonifiche Ambientali</h3>
             <p>Interventi mirati per la sanificazione di spazi urbani e industriali.</p>
         </div>
+        <div id="language-selector">
+    <button onclick="setLanguage('it')">🇮🇹 Italiano</button>
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+    <button onclick="setLanguage('fr')">🇫🇷 Français</button>
+</div>
+<script>
+    function setLanguage(lang) {
+        document.getElementById("welcome").innerText = translations[lang].welcome;
+        document.getElementById("contact").innerText = translations[lang].contact;
+        document.getElementById("services").innerText = translations[lang].services;
+    }
+</script>
+
     </section>
 
     <!-- Galleria -->
