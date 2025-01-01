@@ -9,7 +9,10 @@
         function changeLanguage(lang) {
             const elements = document.querySelectorAll('[data-lang]');
             elements.forEach(el => {
-                el.textContent = translations[lang][el.getAttribute('data-lang')];
+                const key = el.getAttribute('data-lang');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
             });
         }
 
@@ -75,7 +78,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="/mnt/data/JPG%20-%20NERO.jpg" alt="Logo Desinfection Urbaine">
+            <img src="/mnt/data/JPG - NERO.jpg" alt="Logo Desinfection Urbaine" style="max-width: 150px; height: auto;">
         </div>
         <nav>
             <ul>
